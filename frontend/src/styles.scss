@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+
+section {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100;
+  background-color: #A7C7E7;
+}
+
+/*
+
+LANDING PAGE COLOR PALETTE
+Background	#F0F7FF	Soft frosty white-blue
+Accent / Primary	#A7C7E7	Gentle sky blue
+Secondary	#DDEAF6	Frosted light gray-blue
+Headings / Emphasis	#1E3A5F	Deep navy (for contrast)
+Buttons / CTAs	#5BA4E6	Modern blue
+Text	#2C3E50	Neutral dark
+
+
+PORTFOLIO COLOR PALETTE
+Background	#E6F0FA	Soft sky blue with white tint
+Accent / Primary	#9FC9F3	Light sky blue
+Secondary	#CFE5FA	Gentle pastel tone
+Headings / Emphasis	#2A4D69	Muted steel blue
+Buttons / CTAs	#4A90E2	Modern medium blue
+Text	#1F2D3D	Dark neutral gray
+*/

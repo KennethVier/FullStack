@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+/* Optional subtle animations */
+button {
+  @apply transition-transform;
+  &:hover {
+    @apply scale-105;
+  }
+}
+
+img {
+  @apply transition-transform;
+  &:hover {
+    @apply scale-110;
+  }
+}
