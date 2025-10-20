@@ -1,11 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-section {
-  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100;
-  background-color: #A7C7E7;
-}
 
 /*
 
