@@ -1,30 +1,38 @@
 <app-section>
-  <!-- Frosted Glass Card -->
-  <app-card>
-    <img
-      src="me_ai_frosty_nobg.png"
-      alt="Profile"
-      class="w-30 h-30 mx-auto rounded-full border-2 border-white/50 shadow-md mb-6"
-    />
+  <div class="landing-container">
+    <app-card class="content-card">
+      <h1 class="heading">
+        Hi, I'm Kenneth 👋
+      </h1>
 
-    <h1 class="text-4xl font-bold mb-3 drop-shadow-lg">
-      Hi, I’m Kenneth 👋
-    </h1>
+      <p class="sub-text">
+        Full-Stack Engineer | Crafting Scalable Web Applications with Java, Spring Boot & Modern Frontend Frameworks
+      </p>
 
-    <p class="text-lg mb-8 opacity-90">
-      Passionate IT Engineer crafting clean and modern full-stack solutions with Java, Angular, and more.
-    </p>
+      <p class="description">
+        A passionate Full-Stack Developer with a strong foundation in Java and Spring Boot. 
+        I build efficient and scalable solutions that bridge clean backend logic with modern frontend experiences. 
+        Always learning, always creating.
+      </p>
 
-    <button
-      (click)="onCTA()"
-      class="px-6 py-3 bg-blue-500 hover:bg-blue-600 transition rounded-full text-white font-medium shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-    >
-      View My Work 🚀
-    </button>
-</app-card>
+      <button
+        (click)="onCTA()"
+        class="cta-button"
+      >
+        View My Work 🚀
+      </button>
+    </app-card>
 
-  <!-- Optional floating decoration -->
-  <div class="absolute bottom-6 text-white opacity-60 text-sm">
-    © 2025 Kenneth Cerrado — IT Engineer
+    <div class="image-container">
+      <video 
+        src="me_programming.mp4" 
+        autoplay 
+        muted 
+        playsinline 
+        loop 
+        preload="auto"
+      >
+      </video>
+    </div>
   </div>
 </app-section>

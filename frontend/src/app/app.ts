@@ -5,7 +5,7 @@ import { Landing } from "./features/landing/landing";
 
 @Component({
   selector: 'app-root',
-  imports: [Button, Landing],
+  imports: [ Landing],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

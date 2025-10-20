@@ -1,18 +1,97 @@
+:root {
+  /* Landing Page Color Palette */
+  --landing-bg: #F0F7FF;
+  --landing-primary: #A7C7E7;
+  --landing-secondary: #DDEAF6;
+  --landing-heading: #1E3A5F;
+  --landing-button: #5BA4E6;
+  --landing-text: #2C3E50;
+}
+
+$landing-bg: #F0F7FF;
+$landing-primary: #A7C7E7;
+$landing-secondary: #DDEAF6;
+$landing-heading: #1E3A5F;
+$landing-button: #5BA4E6;
+$landing-text: #2C3E50;
 :host {
   display: block;
 }
 
-/* Optional subtle animations */
-button {
-  @apply transition-transform;
-  &:hover {
-    @apply scale-105;
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 6rem);
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  
+  video {
+    width: 120%;
+    max-width: 600px;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transform: translateX(-10%);
+    transition: transform 0.3s cubic-bezier(.4,2,.3,1);
+    border: 4px solid $landing-primary;
+    background: $landing-bg;
+    
+    &:hover {
+      transform: translateX(-10%) scale(1.04);
+      box-shadow: 0 16px 32px rgba(91,164,230,0.18);
+    }
   }
 }
 
-img {
-  @apply transition-transform;
-  &:hover {
-    @apply scale-110;
+.content-card {
+
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $landing-heading;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .sub-text {
+    font-size: 1.1rem;
+    color: $landing-text;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    color: $landing-text;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .cta-button {
+    background-color: $landing-button;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    
+    &:hover {
+      background-color: $landing-heading;
+      transform: translateY(-2px);
+    }
   }
 }
