@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root{
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'JetBrains Mono', monospace;
+  
+  /* SECTIONS BG */
+  --landing-bg: #A7C7E7;
+  --landing-primary: #F0F7FF;
+  --landing-secondary: #DDEAF6;
+  --landing-heading: #1E3A5F;
+  --landing-button: #5BA4E6;
+  --landing-text: #2C3E50;
+
+  --portfolio-bg: #E6F0FA;
+  --portfolio-primary: #9FC9F3;
+  --portfolio-secondary: #CFE5FA;
+  --portfolio-heading: #2A4D69;
+  --portfolio-button: #4A90E2;
+  --portfolio-text: #1F2D3D;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--portfolio-text);
+  background-color: var(--portfolio-bg);
+}
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /*
 

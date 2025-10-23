@@ -1,21 +1,6 @@
 @use "sass:color";
+@use '../../../styles/variables' as *;
 
-:root {
-  /* Landing Page Color Palette */
-  --landing-bg: #F0F7FF;
-  --landing-primary: #A7C7E7;
-  --landing-secondary: #DDEAF6;
-  --landing-heading: #1E3A5F;
-  --landing-button: #5BA4E6;
-  --landing-text: #2C3E50;
-}
-
-$landing-bg: #F0F7FF;
-$landing-primary: #A7C7E7;
-$landing-secondary: #DDEAF6;
-$landing-heading: #1E3A5F;
-$landing-button: #5BA4E6;
-$landing-text: #2C3E50;
 :host {
   display: block;
 }
@@ -91,7 +76,8 @@ $landing-text: #2C3E50;
     transition: background 0.2s, transform 0.2s;
     
     &:hover {
-      background-color: color.scale($landing-button, $lightness: -15%);
+      background-color: var(--landing-button);
+      filter: brightness(85%);
       transform: translateY(-2px);
     }
   }

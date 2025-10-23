@@ -1,0 +1,60 @@
+<nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/10 border-b border-white/20 z-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="logo-v-nobg.png" alt="V Logo" class="h-14 w-14" />
+        <span class="text-lg font-bold text-[color:var(--portfolio-heading)]">Vier</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6 text-sm font-medium">
+        @for (section of sections; track section.id) {
+          <app-button [type]="'button'" (click)="scrollTo(section.id)">{{ section.label }}</app-button>
+        }
+      </div>
+
+      <!-- Profile Dropdown -->
+      <div class="relative">
+        <button id="user-menu" type="button" class="flex items-center focus:outline-none" (click)="toggleDropdown()">
+          <img src="me_ai.png" alt="Profile" class="w-10 h-10 rounded-full border border-white/30">
+        </button>
+
+        <!-- Dropdown Menu -->
+        <div
+          id="dropdown"
+          class="absolute right-0 mt-2 w-48 bg-white/10 backdrop-blur-md rounded-xl shadow-lg py-2 border border-white/20 hidden"
+        >
+          <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-white/20 rounded-md">Profile</a>
+          <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-white/20 rounded-md">Settings</a>
+          <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-white/20 rounded-md">Logout</a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button
+          type="button"
+          class="text-[color:var(--portfolio-text)] hover:text-white"
+          (click)="toggleMobileMenu()"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white/5 backdrop-blur-md border-t border-white/20">
+    <div class="px-4 py-3 space-y-2 text-sm">
+        @for (section of sections; track section.id) {
+          <app-button [type]="'button'" (click)="scrollTo(section.id)">{{ section.label }}</app-button>
+        }
+    </div>
+  </div>
+</nav>

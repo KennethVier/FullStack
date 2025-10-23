@@ -1,0 +1,7 @@
+.hover-link {
+    color: var(--portfolio-text);
+    transition: color 0.3s;
+}
+.hover-link:hover {
+    color: var(--portfolio-button);
+}
