@@ -1,19 +1,53 @@
-<app-section>
-    <div class="about-container" id="about">
-        <app-card class="about-card">
-        <h2 class="about-heading">About Me</h2>
-        <p class="about-description">
-            I'm Kenneth, a dedicated Full-Stack Engineer with expertise in Java, Spring Boot, and modern frontend frameworks. 
-            I specialize in building scalable web applications that deliver seamless user experiences. 
-            My passion lies in crafting efficient backend systems while ensuring intuitive and engaging frontends.
+<app-section id="about" bgClass="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 md:px-20 py-16 bg-[color:var(--portfolio-bg)]">
+    <!-- Left side: Logo / Image -->
+    <div class="flex-1 flex justify-center mb-10 md:mb-0">
+        <div class="relative w-48 h-48 rounded-full backdrop-blur-md bg-white/10 border border-white/20 shadow-lg flex items-center justify-center">
+        <img 
+            src="me_ai.png" 
+            alt="Vier Logo" 
+            class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white"
+        />
+        </div>
+    </div>
+
+    <!-- Right side: Story -->
+    <div class="flex-1 text-center md:text-left space-y-6">
+        <h2 class="text-3xl font-bold text-[color:var(--portfolio-heading)]">About Me</h2>
+        <p class="text-[color:var(--portfolio-text)] leading-relaxed">
+        Hey there 👋 I’m <strong>Kenneth Vier</strong> — a passionate developer who believes in building things that are not only functional but meaningful.
+        I enjoy turning ideas into code, learning new technologies, and creating elegant solutions that simplify complexity.
         </p>
-        <p class="about-description">
-            With a strong foundation in both backend and frontend technologies, I thrive on creating solutions that are not only robust but also user-centric. 
-            I am constantly exploring new technologies and methodologies to enhance my skills and deliver cutting-edge applications.
+        <p class="text-[color:var(--portfolio-text)] leading-relaxed">
+        My journey started with curiosity — understanding how things work, and evolved into a drive for clarity, innovation, and continuous improvement.
+        I value structure, simplicity, and clean design — both in code and in life.
         </p>
-        <p class="about-description">
-            Let's connect and explore how we can collaborate to build innovative web solutions!
-        </p>
-        </app-card>
+    </div>
+
+</app-section>
+
+<app-section bgClass="bg-[color:var(--portfolio-bg)] px-8 md:px-20 pb-20">
+    <!-- Timeline -->
+    <div class="max-w-3xl mx-auto">
+        <h3 class="text-2xl font-semibold text-[color:var(--portfolio-heading)] mb-8 text-center">My Journey 🚀</h3>
+        <div class="space-y-10 border-l border-[color:var(--portfolio-accent)] pl-6">
+        
+            <div class="relative">
+                <div class="absolute -left-3 top-0 w-6 h-6 bg-[color:var(--portfolio-accent)] rounded-full"></div>
+                <h4 class="text-lg font-semibold text-[color:var(--portfolio-heading)]">2024 - Present</h4>
+                <p class="text-[color:var(--portfolio-text)]">Joined <strong>Be Unique Inc.</strong> as an IT Engineer — working on full-stack development using Java, Spring Boot, and modern frontend tools.</p>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -left-3 top-0 w-6 h-6 bg-[color:var(--portfolio-accent)] rounded-full"></div>
+                <h4 class="text-lg font-semibold text-[color:var(--portfolio-heading)]">2023 - 2024</h4>
+                <p class="text-[color:var(--portfolio-text)]">Built small projects and personal experiments that strengthened my foundation in clean coding, design, and backend logic.</p>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -left-3 top-0 w-6 h-6 bg-[color:var(--portfolio-accent)] rounded-full"></div>
+                <h4 class="text-lg font-semibold text-[color:var(--portfolio-heading)]">Earlier</h4>
+                <p class="text-[color:var(--portfolio-text)]">A curious learner exploring everything tech — from web design to system logic. That curiosity led me here, continuously improving and creating.</p>
+            </div>
+        </div>
     </div>
 </app-section>
