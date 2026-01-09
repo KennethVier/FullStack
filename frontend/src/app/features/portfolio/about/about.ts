@@ -4,7 +4,7 @@ import { Card } from "../../../components/card/card";
 
 @Component({
   selector: 'app-about',
-  imports: [Section],
+  imports: [Section, Card],
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
